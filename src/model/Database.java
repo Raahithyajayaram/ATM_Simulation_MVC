@@ -1,4 +1,4 @@
-package model;  // This must be present
+package model;  
 
 import java.sql.*;
 
