@@ -16,7 +16,7 @@ public class AdminLoginFrame extends JFrame {
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        adminController = new AdminController(); // Initialize controller
+        adminController = new AdminController(); 
 
         JPanel panel = new JPanel(new GridBagLayout());
         panel.setBackground(new Color(20, 30, 60));
@@ -84,7 +84,7 @@ public class AdminLoginFrame extends JFrame {
             if (isAuthenticated) {
                 JOptionPane.showMessageDialog(this, "Login successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
                 dispose(); // close login frame
-                new AdminDashboardFrame().setVisible(true); // open dashboard
+                new AdminDashboardFrame().setVisible(true); 
             } else {
                 JOptionPane.showMessageDialog(this, "Invalid username or password.", "Login Failed", JOptionPane.ERROR_MESSAGE);
             }
@@ -92,7 +92,7 @@ public class AdminLoginFrame extends JFrame {
 
         btnBack.addActionListener(e -> {
             dispose();
-            new HomeFrame(); // Assuming this is the home screen with login options
+            new HomeFrame(); 
         });
 
         setVisible(true);

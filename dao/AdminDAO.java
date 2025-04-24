@@ -10,7 +10,6 @@ import java.util.List;
 
 public class AdminDAO {
 
-    // Get all users
     public List<User> getAllUsers() {
         String sql = "SELECT * FROM users";
         List<User> users = new ArrayList<>();
@@ -32,7 +31,6 @@ public class AdminDAO {
         return users;
     }
 
-    // Add a new user
     public boolean addUser(User user) {
         String sql = "INSERT INTO users (username, pin, balance) VALUES (?, ?, ?)";
         try (Connection conn = Database.connect();
@@ -49,7 +47,6 @@ public class AdminDAO {
         return false;
     }
 
-    // Update user balance
     public boolean updateUserBalance(int userId, double newBalance) {
         String sql = "UPDATE users SET balance = ? WHERE id = ?";
         try (Connection conn = Database.connect();
@@ -65,7 +62,6 @@ public class AdminDAO {
         return false;
     }
 
-    // Delete user
     public boolean deleteUser(int userId) {
         String sql = "DELETE FROM users WHERE id = ?";
         try (Connection conn = Database.connect();
@@ -80,7 +76,6 @@ public class AdminDAO {
         return false;
     }
 
-    // Get admin by username (for login)
     public Admin getAdminByUsername(String username) {
         String sql = "SELECT * FROM admins WHERE username = ?";
         try (Connection conn = Database.connect();

@@ -6,14 +6,12 @@ public class User {
     private String pin;
     private double balance;
 
-    // Constructor to use in AddUserDialog
     public User(String username, String pin, double balance) {
         this.username = username;
         this.pin = pin;
         this.balance = balance;
     }
 
-    // Optional: Constructor with ID if needed elsewhere
     public User(int id, String username, String pin, double balance) {
         this.id = id;
         this.username = username;
@@ -21,7 +19,6 @@ public class User {
         this.balance = balance;
     }
 
-    // Getters and setters
     public int getId() {
         return id;
     }

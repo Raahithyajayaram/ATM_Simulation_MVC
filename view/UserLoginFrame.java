@@ -18,7 +18,7 @@ public class UserLoginFrame extends JFrame {
         userController = new UserController();
 
         setTitle("User Login");
-        setExtendedState(JFrame.MAXIMIZED_BOTH); // Full screen
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new GridBagLayout());
         getContentPane().setBackground(new Color(40, 44, 52));

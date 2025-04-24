@@ -10,7 +10,6 @@ public class UserController {
         this.userDAO = new UserDAO();
     }
 
-    // Fixed method name and return type
     public User authenticateUser(String username, String pin) {
         return userDAO.authenticate(username, pin);
     }

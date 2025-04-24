@@ -16,7 +16,7 @@ public class UserDashboardFrame extends JFrame {
         this.userController = new UserController();
 
         setTitle("User Dashboard - Welcome, " + user.getUsername());
-        setExtendedState(JFrame.MAXIMIZED_BOTH); // Fullscreen
+        setExtendedState(JFrame.MAXIMIZED_BOTH); 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         JPanel panel = new JPanel();

@@ -8,10 +8,9 @@ import java.awt.event.ActionListener;
 public class HomeFrame extends JFrame {
     public HomeFrame() {
         setTitle("ATM System - Home");
-        setExtendedState(JFrame.MAXIMIZED_BOTH); // Fullscreen
+        setExtendedState(JFrame.MAXIMIZED_BOTH); 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // Theme colors
         Color primaryColor = new Color(0x1E1E2F);
         Color accentColor = new Color(0x4DB8FF);
         Color textColor = Color.WHITE;

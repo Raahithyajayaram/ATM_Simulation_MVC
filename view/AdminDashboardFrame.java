@@ -54,7 +54,6 @@ public class AdminDashboardFrame extends JFrame {
         add(titleLabel, BorderLayout.NORTH);
         add(centerWrapper, BorderLayout.CENTER);
 
-        // Functional buttons
         btnAddUser.addActionListener(e -> showAddUserDialog());
         btnViewUsers.addActionListener(e -> showUsersTable());
         btnDeleteUser.addActionListener(e -> showDeleteUserDialog());

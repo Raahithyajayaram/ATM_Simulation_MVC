@@ -20,7 +20,6 @@ public class AddUserDialog extends JDialog {
 
         adminController = new AdminController();
 
-        // Create UI components
         JLabel lblUsername = new JLabel("Username:");
         JLabel lblPin = new JLabel("PIN:");
         JLabel lblBalance = new JLabel("Balance:");
@@ -31,7 +30,6 @@ public class AddUserDialog extends JDialog {
 
         btnAdd = new JButton("Add User");
 
-        // Panel to hold components
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(4, 2));
 
@@ -44,7 +42,6 @@ public class AddUserDialog extends JDialog {
         panel.add(new JLabel());
         panel.add(btnAdd);
 
-        // Add action listener for Add button
         btnAdd.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
